@@ -15,7 +15,7 @@
       <div class="header-content">
         <div class="header-logo">FreshNews</div>
         <form action="" class="header-form">
-          <input type="text" class="header-search-button" placeholder="Search an article">
+          <input type="text" class="header-search-field" placeholder="Search an article">
         </form>
       </div>
     </div>
@@ -23,63 +23,64 @@
 
   <!--Main content-->
   <main class="main">
-
+    <button class="add-article-button">+</button>
     <div class="wrapper">
       <article class="main-content">
         <h2 class="main-content-heading">News</h2>
-        <form action="" class="main-content-form">
+        <form action="" class="main-content-form hidden-element">
           <h3 class="main-content-form-heading">Add new post</h3>
           <div class="input-wrapper">
             <label for="articleTitle">Post title</label>
             <input id="articleTitle" type="text" class="main-content-form-input"
-            placeholder="Please enter your post title">
+            placeholder="Please enter your post title"
+            required>
           </div>
           <div class="input-wrapper">
             <label for="contentField">Post content</label>
-            <textarea id="contentField" name="" id="" cols="30" rows="10"></textarea>
+            <textarea id="contentField" name="" id="" cols="30" rows="10" required></textarea>
           </div>
           <div class="buttons-wrapper">
-            <button type="submit">Publish</button>
-            <button type="reset">Cancel</button>
+            <button id="submitButton" type="submit">Publish</button>
+            <button id="cancelButton" type="button">Cancel</button>
           </div>
         </form>
       </article>
     </div>
 
-    <section>
-      <div class="wrapper">
-        <article class="user-article">
-          <div class="article-title-wrapper">
-            <h2 class="article-title">Lorem ipsum</h2>
-            <p class="article-publishing-date">01.05.2021</p>
-          </div>
-          <p class="article-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio eos in at earum facilis et accusamus ab velit quia architecto, neque provident alias cupiditate delectus dicta, aspernatur fugit molestias exercitationem quasi! Quia architecto hic eaque tempora consequatur? Placeat debitis optio dolorum nemo. Saepe nemo repellendus explicabo magnam incidunt nesciunt.
-          </p>
-        </article>
+    <section id="userPostsContainer" class="wrapper">
+      <article class="user-article">
+        <div class="article-title-wrapper">
+          <h2 class="article-title">Lorem ipsum</h2>
+          <p class="article-publishing-date">01.05.2021</p>
+        </div>
+        <p class="article-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio eos in at earum facilis et accusamus ab velit quia architecto, neque provident alias cupiditate delectus dicta, aspernatur fugit molestias exercitationem quasi! Quia architecto hic eaque tempora consequatur? Placeat debitis optio dolorum nemo. Saepe nemo repellendus explicabo magnam incidunt nesciunt.
+        </p>
+      </article>
 
-        <article class="user-article">
-          <div class="article-title-wrapper">
-            <h2 class="article-title">Lorem ipsum</h2>
-            <p class="article-publishing-date">01.05.2021</p>
-          </div>
-          <p class="article-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio eos in at earum facilis et accusamus ab velit quia architecto, neque provident alias cupiditate delectus dicta, aspernatur fugit molestias exercitationem quasi! Quia architecto hic eaque tempora consequatur? Placeat debitis optio dolorum nemo. Saepe nemo repellendus explicabo magnam incidunt nesciunt.
-          </p>
-        </article>
+      <!---->
+      <article class="user-article">
+        <div class="article-title-wrapper">
+          <h2 class="article-title">i found you</h2>
+          <p class="article-publishing-date">01.05.2021</p>
+        </div>
+        <p class="article-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio eos in at earum facilis et accusamus ab velit quia architecto, neque provident alias cupiditate delectus dicta, aspernatur fugit molestias exercitationem quasi! Quia architecto hic eaque tempora consequatur? Placeat debitis optio dolorum nemo. Saepe nemo repellendus explicabo magnam incidunt nesciunt.
+        </p>
+      </article>
 
-        <article class="user-article">
-          <div class="article-title-wrapper">
-            <h2 class="article-title">Lorem ipsum</h2>
-            <p class="article-publishing-date">01.05.2021</p>
-          </div>
-          <p class="article-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio eos in at earum facilis et accusamus ab velit quia architecto, neque provident alias cupiditate delectus dicta, aspernatur fugit molestias exercitationem quasi! Quia architecto hic eaque tempora consequatur? Placeat debitis optio dolorum nemo. Saepe nemo repellendus explicabo magnam incidunt nesciunt.
-          </p>
-        </article>
-      </div>
+      <article class="user-article">
+        <div class="article-title-wrapper">
+          <h2 class="article-title">Find me</h2>
+          <p class="article-publishing-date">01.05.2021</p>
+        </div>
+        <p class="article-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odio eos in at earum facilis et accusamus ab velit quia architecto, neque provident alias cupiditate delectus dicta, aspernatur fugit molestias exercitationem quasi! Quia architecto hic eaque tempora consequatur? Placeat debitis optio dolorum nemo. Saepe nemo repellendus explicabo magnam incidunt nesciunt.
+        </p>
+      </article>
     </section>
   </main>
+  <script src="./assets/js/data.js"></script>
   <script src="./assets/js/service.js"></script>
   <script src="./assets/js/index.js"></script>
 </body>
