@@ -8,11 +8,14 @@
   margin: 0 auto;
 }
 
+.hidden-element{
+  display: none;
+}
+
 /*Common styles end*/
 body{
   font-family: Arial, sans-serif;
 }
-
 
 /*Header styles start*/
 .top-header{
@@ -30,7 +33,7 @@ body{
   font-size: 1.5rem;
 }
 
-.header-search-button{
+.header-search-field{
   padding: 5px 10px;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -45,6 +48,30 @@ body{
   background-color: pink;
   min-height: 100vh;
   padding-bottom: 150px;
+  position: relative;
+}
+
+.add-article-button{
+  position: fixed;
+  right: 40px;
+  bottom: 150px;
+  background-color: brown;
+  border: 1px solid transparent;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.add-article-button:hover::before{
+  content: "Add new article";
+  position: absolute;
+  border: 2px solid crimson;
+  padding: 10px;
+  font-size: 1rem;
+  top: -40px;
+  left: -130px;
 }
 
 .main-content{
