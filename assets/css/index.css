@@ -1,3 +1,136 @@
 *{
   box-sizing: border-box;
 }
+
+/*Common styles start*/
+.wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*Common styles end*/
+body{
+  font-family: Arial, sans-serif;
+}
+
+
+/*Header styles start*/
+.top-header{
+  background-color: yellow;
+}
+
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.header-logo{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.header-search-button{
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+/*Header-styles finish*/
+
+
+
+/*Main content start*/
+.main{
+  background-color: pink;
+  min-height: 100vh;
+  padding-bottom: 150px;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content-heading{
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.main-content-form{
+  width: 100%;
+  padding: 40px 20%;
+  background-color: white;
+}
+
+.main-content-form-heading{
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper > label{
+  margin: 10px 0;
+}
+
+.input-wrapper > input, .input-wrapper > textarea{
+  padding: 5px 10px;
+}
+
+.input-wrapper + .input-wrapper{
+  margin-top: 25px;
+}
+
+.buttons-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+.buttons-wrapper > button{
+  border: 1px solid transparent;
+  background-color: orange;
+  padding: 5px 35px;
+  transition: 1s background-color ease-in-out;
+}
+
+.buttons-wrapper > button:hover{
+  background-color: rgb(231, 231, 17);
+}
+
+/*Form finish*/
+
+/*Section start*/
+.user-article{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: white;
+  line-height: 1.5;
+  text-align: justify;
+  margin-top: 35px;
+  border: 3px solid orange;
+}
+
+.article-title-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.article-title{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/*Section finish*/
+
+/*Main content finish*/
