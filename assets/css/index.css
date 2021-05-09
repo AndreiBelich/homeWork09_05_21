@@ -64,16 +64,6 @@ body{
   line-height: 1;
 }
 
-.add-article-button:hover::before{
-  content: "Add new article";
-  position: absolute;
-  border: 2px solid crimson;
-  padding: 10px;
-  font-size: 1rem;
-  top: -40px;
-  left: -130px;
-}
-
 .main-content{
   display: flex;
   flex-direction: column;
@@ -83,7 +73,7 @@ body{
 .main-content-heading{
   font-weight: bold;
   font-size: 1.5rem;
-  margin: 15px 0;
+  margin: 50px 0 50px 0;
 }
 
 .main-content-form{

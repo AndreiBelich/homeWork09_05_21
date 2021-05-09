@@ -104,10 +104,10 @@ function createArticleHeader(title, date){
 
 function getCurrentDate(){
   const currentDate = new Date();
-  return `${correctNumber(currentDate.getDay())}.${correctNumber(currentDate.getMonth() + 1)}.${currentDate.getFullYear()}`;
+  return `${getCorrectDayNumber(currentDate.getDate())}.${getCorrectDayNumber(currentDate.getMonth() + 1)}.${currentDate.getFullYear()}`;
 }
 
-function correctNumber(number){
+function getCorrectDayNumber(number){
   return number < 10 ? "0" + number : number;
 }
 
