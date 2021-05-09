@@ -1,5 +1,10 @@
 "use strict";
 
+/*
+  В разметке присутствует 4 статьи для проверки поиска. Для тестирования их можно раскоментировать
+  в файле index.html
+*/
+
 const submitButton = document.querySelector("#submitButton");
 const cancelButton = document.querySelector("#cancelButton");
 const mainForm = document.querySelector(".main-content-form");
